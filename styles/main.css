@@ -112,12 +112,8 @@ header .search-header{
    opacity: 0.5;
 }
 
-#slider{
-    width: 75%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-.slider{
+
+/* .slider{
     width: 70%;
     height: 350px;
     padding-top: 50px;
@@ -174,11 +170,52 @@ input[name="r"]{
 }
 #r4:checked ~ .s1{
     margin-left: -76.5%;
+} */
+
+
+#slider{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.mySlides {
+    display: none;
+}
+.mySlides{
+    height: 350px;
+}
+.mySlides img{
+   border-radius: 50px;
+   height: 100%;
+}
+.dot {
+  height: 10px;
+  width: 30px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 10px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 
 
-#categories, #products{
+
+#categories{
+    margin: 50px 0;
+}
+#products{
     margin: 100px 0;
 }
 .name{
@@ -239,10 +276,6 @@ input[name="r"]{
     transform: scale(1.1);
     z-index: 1;
 }
-
-
-
-
 .product-card{
     width: 23%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -254,7 +287,6 @@ input[name="r"]{
 .inner-card{
     padding: 0 20px 20px;
 }
-
 .heart {
     position: relative;
     top: 20px;
@@ -323,6 +355,11 @@ input[name="r"]{
     box-shadow: 0 5px 5px rgb(220, 220, 220);
 }
 
+
+
+#ads{
+    margin: 50px 0;
+}
 #ads .wrapper img{
     width: 100%;
 }
