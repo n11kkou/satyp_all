@@ -21,6 +21,7 @@ header{
     background-color: #ffffff;
     position: fixed;
     z-index: 10;
+    top: 0;
 }
 .onscroll{
     box-shadow: 0 0 15px rgba(187, 187, 187, 0.908);
@@ -90,6 +91,7 @@ header .search-header{
 }
 .second-nav {
     margin-top: 10px;
+    padding-top: 90px;
 }
 .second-nav a{
     text-decoration: none;
@@ -117,8 +119,8 @@ header .search-header{
 }
 .slider{
     width: 70%;
-    height: 500px;
-    padding-top: 180px;
+    height: 350px;
+    padding-top: 50px;
 }
 .navigation{
     position: absolute;
@@ -261,11 +263,11 @@ input[name="r"]{
 } 
 .fa.fa-heart-o.tap{
     font-weight: 900;
-    color: red;
+    color: #0353a4;
 } 
 .heart:hover .fa.fa-heart-o{
     font-weight: 900;
-    color: red;
+    color: #0353a4;
 }
 .heart span{
     display: none;
