@@ -18,6 +18,7 @@ body{
     font-weight: 400;
 }
 header{
+    padding-top: 10px;
     background-color: #ffffff;
     position: fixed;
     z-index: 10;
@@ -31,7 +32,7 @@ header{
     margin: 0 auto;
 }
 .inner{
-    padding: 20px 0;
+    padding: 10px 0;
 }
 .flex{
     display: flex;
@@ -39,7 +40,7 @@ header{
     justify-content: space-between;
 }
 header .logo{
-    width: 8%;
+    width: 9%;
     margin-right: 5%;
     cursor: pointer;
     transition: .3s;
@@ -48,7 +49,7 @@ header nav{
     width: 30%;
 }
 header nav img{
-    width: 8%;
+    width: 9%;
     margin-right: 30px;
     cursor: pointer;
     transition: .3s;
@@ -61,22 +62,24 @@ header .search-header{
 }
 .search-header{
     display: flex;
+    position: relative;
+    align-items: center;
 }
 .search-header input{
     width: 100%;
     border-radius: 40px;
     border-color: #0353a4;
-    padding-left: 25px;  
+    padding: 16px 0 16px 25px; 
 }
 .search-header button{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     border: none;
     background-color: #0353a4;
     padding: 10px;
-    position: relative;
-    right: 3%;
+    position: absolute;
+    right: 4px;
     cursor: pointer;
     transition: .3s;
 }
@@ -90,20 +93,26 @@ header .search-header{
     width: 85%;
 }
 .second-nav {
-    margin-top: 10px;
-    padding-top: 90px;
+    padding-top: 100px;
+}
+.second-nav .link{
+    background: #f6f7f9;
+    border: 1px solid #eef1f2;
+    padding: 7px 14px;
+    border-radius: 16px;
 }
 .second-nav a{
     text-decoration: none;
     color: black;
     transition: .3s;
+    margin-left: 10px;
 }
 .second-nav, .second-nav  .link{
     display: flex;
     align-items: center;
 }
 .second-nav  .link{
-    margin-right: 30px;
+    margin-right: 20px;
 }
 .second-nav  .link img{
     width: 25px;
@@ -182,7 +191,7 @@ input[name="r"]{
     display: none;
 }
 .mySlides{
-    height: 350px;
+    height: 300px;
 }
 .mySlides img{
    border-radius: 50px;

@@ -3,7 +3,7 @@ window.onscroll = function () {
 };
 
 function myFunction() {
-  if (document.documentElement.scrollTop > 50) {
+  if (document.documentElement.scrollTop > 10) {
     document.getElementById("header").className = "onscroll";
   } else {
     document.getElementById("header").className = "";
@@ -38,5 +38,5 @@ function showSlides() {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 1500); // Change image every 2 seconds
 }
