@@ -11,7 +11,225 @@
 
 /* Small device/tablets */
 @media only screen and (max-width: 768px){
+    body{
+        color: #272D33;
+    }
+    h1{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 14px;
+    }
+    p{
+        font-size: 12px;
+    }
+    a{
+        font-size: 12px;
+    }
+    .links a {
+        font-size: 14px;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+    .wrapper{
+        width: 90%;
+    }
+    header .logo{
+        width: 11%;
+    }
+
+    header nav img {
+        margin-right: 20px;
+    }
+    header nav img {
+        width: 10%;
+        margin-right: 20px;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .search-header input {
+        padding: 12px 0 12px 20px;
+        font-size: 12px;
+    }
+    .search-header button, .search-header-mobile button {
+        width: 32px;
+        height: 32px;
+        padding: 7px;
+    }
+    .second-nav .link-nav {
+        padding: 7px 7px;
+        border-radius: 10px;
+    }
+    .second-nav {
+        padding-top: 90px;
+    }
+    .second-nav .link-nav img {
+        width: 15px;
+    } 
+    .second-nav a {
+        margin-left: 7px;
+        font-size: 12px;
+    }   
+    #slider {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+    .mySlides{
+        height: 250px;
+    }
+    .mySlides img{
+        border-radius: 25px;
+    }
+    .dots{
+        margin-top: 10px;
+    }
+    .dot {
+        height: 8px;
+        width: 25px;
+        margin: 0 1px;
+    }
+    .active {
+        background-color: #bbb;
+    }
+    .row .card{
+    width: 48%;
 }
+.row .card2, .two-cards{
+    display: none;
+}
+.row .card img {
+   width: 130px;
+}
+#products{
+    margin: 50px 0;
+}
+#products .flex{
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+.product-card{
+    width: 48%;
+    box-shadow: 0 0 15px rgba(212, 211, 211, 0.908);
+}
+.inner-card {
+    padding: 0 15px 15px;
+}
+.heart{
+    font-size: 18px;
+    top: 10px;
+}
+.inner-info img {
+    width: 120px;
+    position: static;
+}
+.inner-info p {
+    font-size: 10px;
+}
+.inner-desc{
+    width: 40%;
+}
+.default {
+    padding: 8px 25px;
+    font-size: 12px;
+}
+    
+.text, .search-footer{
+    width: 90%;
+}
+
+.search-footer input {
+    border-radius: 20px;
+    padding: 12px 0 12px 15px;
+    font-size: 12px;
+}
+.search-footer button{
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+.text p {
+    margin: 10px 0 20px;
+}
+.textp p {
+    font-size: 10px;
+}
+.footer-flex{
+    flex-direction: column; 
+}
+footer .logo{
+    display: none;
+}
+.logo.mobile-logo{
+    display: block;
+    margin-top: 30px;
+}
+.footer-inner{
+    padding: 0;
+}
+footer .logo, .link {
+    width: 100%;
+    text-align: center;
+}
+footer .logo img{
+    width: 20%;
+}
+footer .icons{
+    margin: 10px auto;
+    width: 20%;
+}
+.icons a img {
+    width: 20px;
+}
+footer .link{
+    margin-top: 20px;
+    text-align: left;
+    position: relative;
+}
+.link hr{
+    display: block;
+    height: 0.5px;
+    background-color: #0353a4;
+    border: none;
+}
+label.toggleMenu{
+    display: block;
+}
+label.toggleMenu .fa::before{
+    content: "\f0d7";
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+input.toggleMenu {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+#link1, #link2, #link3, #link4{
+   display: none;
+}
+input.toggleMenu:checked ~ label.toggleMenu .fa::before{
+    display: block;
+    content: "\f0d8"; 
+    transition: .3s;
+}
+input.toggleMenu:checked ~ #link1, input.toggleMenu:checked ~ #link2, input.toggleMenu:checked ~ #link3, input.toggleMenu:checked ~ #link4{
+   display: flex;
+   transition: .3s;
+}
+
+}
+
+
 /* Extra small device/phone */
 @media only screen and (max-width: 480px){
 body{
