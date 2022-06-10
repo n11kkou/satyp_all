@@ -8,6 +8,7 @@
     <title>Главная</title>
     <link rel="shortcut icon" href="./images/logo.png">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/adaptive_main.css">
     <script src="https://kit.fontawesome.com/140219e2b5.js" crossorigin="anonymous"></script>
 </head>
 
@@ -34,25 +35,60 @@
         </div>
     </header>
 
+    <div class="header-mobile">
+        <div class="wrapper">
+            <div class="flex">
+                <div class="logo-mobile" onclick="return_top()">
+                    <img src="./images/logo.png" alt="logo" width="100%">
+                </div>
+                <div class="burger-menu" onclick="open_close()">
+                    <div class="menu-inner">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="burger-links">
+            <div class="wrapper">
+                <a href="#"> <img src="./images/logo.png" alt=""> Главная</a>
+                <a href="#"> <img src="./icons/aboutus.png" alt=""> О нас</a>
+                <a href="#"> <img src="./icons/shop2.png" alt=""> Маркет</a>
+                <a href="#"> <img src="./icons/shopping-bag.png" alt=""> Заказы</a>
+                <a href="#"> <img src="./icons/heart.png" alt=""> Избранное</a>
+                <a href="#"> <img src="./icons/shopping-cart.png" alt=""> Кoрзина</a>
+                <a href="#"> <img src="./icons/akciya.png" alt=""> Акции</a>
+                <a href="#"> <img src="./icons/help.webp" alt=""> Помощь</a>
+                <a href="#"> <img src="./icons/user.png" alt=""> Войти</a>
+            </div>
+
+        </div>
+    </div>
+
     <div class="wrapper">
         <div class="second-nav">
-            <div class="link">
+            <div class="link-nav">
                 <img src="./icons/aboutus.png" alt=""><a href="#">О нас</a>
             </div>
-            <div class="link">
+            <div class="link-nav">
                 <img src="./icons/shop2.png" alt=""><a href="#">Маркет</a>
             </div>
-            <div class="link">
+            <div class="link-nav">
                 <img src="./icons/akciya.png" alt=""><a href="#">Акции</a>
             </div>
-            <div class="link">
+            <div class="link-nav">
                 <img src="./icons/help.webp" alt=""><a href="#">Помощь</a>
             </div>
         </div>
     </div>
 
-    <section id="slider">
-        <!-- <div class="slider">
+    <div class="search-header-mobile">
+        <input type="text" placeholder="Искать товары:">
+        <button><img src="./icons/search.png" alt=""></button>
+    </div>
+
+    <!-- <div class="slider">
             <div class="slides">
                 <input type="radio" name="r" id="r1" checked>
                 <input type="radio" name="r" id="r2">
@@ -72,6 +108,7 @@
             </div>
         </div> -->
 
+    <section id="slider">
         <div class="slideshow-container">
 
             <div class="mySlides fade">
@@ -88,9 +125,8 @@
             </div>
 
         </div>
-        <br>
 
-        <div style="text-align:center">
+        <div style="text-align:center" class="dots">
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
@@ -442,36 +478,64 @@
                             <a href=""><img src="./icons/telegram-black.png" alt=""></a>
                         </div>
                     </div>
-                    <div class="links">
+                    <div class="link">
                         <h3>Маркетплейс</h3>
-                        <a href="">О компании</a>
-                        <a href="">Контакты</a>
-                        <a href="">Вакансии</a>
-                        <a href="">Реквизиты</a>
-                        <a href="">Партнерская программа</a>
-                        <a href="">Настоящий маркетплейс</a>
+                        <input type="checkbox" name="toggle" id="toggle" class="toggleMenu">
+                        <label for="sub_m1" class="toggleMenu"><i class="fa"></i></label>
+                        <div class="links" id="link1">
+                            <a href="">О компании</a>
+                            <a href="">Контакты</a>
+                            <a href="">Вакансии</a>
+                            <a href="">Реквизиты</a>
+                            <a href="">Партнерская программа</a>
+                            <a href="">Настоящий маркетплейс</a>
+                        </div>
+                        <hr>
                     </div>
-                    <div class="links">
+                    <div class="link">
                         <h3>Покупателю</h3>
-                        <a href="">Помощь покупателю</a>
-                        <a href="">Доставка</a>
-                        <a href="">Акции</a>
-                        <a href="">Оплата</a>
-                        <a href="">Возврат</a>
-                        <a href="">Промокоды</a>
+                        <input type="checkbox" name="toggle" id="toggle" class="toggleMenu">
+                        <label for="sub_m1" class="toggleMenu"><i class="fa"></i></label>
+                        <div class="links" id="link2">
+                            <a href="">Помощь покупателю</a>
+                            <a href="">Доставка</a>
+                            <a href="">Акции</a>
+                            <a href="">Оплата</a>
+                            <a href="">Возврат</a>
+                            <a href="">Промокоды</a>
+                        </div>
+                        <hr>
                     </div>
-                    <div class="links">
+                    <div class="link">
                         <h3>Правовая информация</h3>
-                        <a href="">Условия пользования сайтом</a>
-                        <a href="">Полтика обработки персональных данных</a>
-                        <a href="">Условия заказа и доставки</a>
-                        <a href="">Правила сервиса</a>
+                        <input type="checkbox" name="toggle" id="toggle" class="toggleMenu">
+                        <label for="sub_m1" class="toggleMenu"><i class="fa"></i></label>
+                        <div class="links" id="link3">
+                            <a href="">Условия пользования сайтом</a>
+                            <a href="">Полтика обработки персональных данных</a>
+                            <a href="">Условия заказа и доставки</a>
+                            <a href="">Правила сервиса</a>
+                        </div>
+                        <hr>
                     </div>
-                    <div class="links">
+                    <div class="link">
                         <h3>Магазинам</h3>
-                        <a href="">Помощь магазинам</a>
-                        <a href="">Приглашение к сотрудничеству</a>
-                        <a href="">Вход в личный кабинет</a>
+                        <input type="checkbox" name="toggle" id="toggle" class="toggleMenu">
+                        <label for="sub_m1" class="toggleMenu"><i class="fa"></i></label>
+                        <div class="links" id="link4">
+                            <a href="">Помощь магазинам</a>
+                            <a href="">Приглашение к сотрудничеству</a>
+                            <a href="">Вход в личный кабинет</a>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="logo mobile-logo">
+                        <img src="./images/logo.png" alt="">
+                        <div class="icons">
+                            <a href=""><img src="./icons/instagram-black.png" alt=""></a>
+                            <a href=""><img src="./icons/facebook.png" alt=""></a>
+                            <a href=""><img src="./icons/telegram-black.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>

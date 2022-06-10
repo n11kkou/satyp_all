@@ -16,6 +16,7 @@ html {
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    overflow: scroll;
 }
 header{
     padding-top: 10px;
@@ -24,8 +25,14 @@ header{
     z-index: 10;
     top: 0;
 }
+.header-mobile{
+    display: none;
+}
 .onscroll{
     box-shadow: 0 0 15px rgba(187, 187, 187, 0.908);
+}
+body.scroll{
+    overflow: hidden;
 }
 .wrapper{
     width: 75%;
@@ -60,18 +67,21 @@ header nav img:hover{
 header .search-header{
     width: 60%;
 }
-.search-header{
+.search-header-mobile{
+    display: none;
+}
+.search-header {
     display: flex;
     position: relative;
     align-items: center;
 }
-.search-header input{
+.search-header input, .search-header-mobile input{
     width: 100%;
     border-radius: 40px;
     border-color: #0353a4;
     padding: 16px 0 16px 25px; 
 }
-.search-header button{
+.search-header button, .search-header-mobile button{
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -83,19 +93,19 @@ header .search-header{
     cursor: pointer;
     transition: .3s;
 }
-.search-header button:hover{
+.search-header button:hover, .search-header-mobile button:hover{
     background: #034689;
 }
-.search-header button:hover img{
+.search-header button:hover img, .search-header-mobile button:hover img{
     width: 80%;
 }
-.search-header button img{
+.search-header button img, .search-header-mobile button img{
     width: 85%;
 }
 .second-nav {
     padding-top: 100px;
 }
-.second-nav .link{
+.second-nav .link-nav{
     background: #f6f7f9;
     border: 1px solid #eef1f2;
     padding: 7px 14px;
@@ -106,20 +116,26 @@ header .search-header{
     color: black;
     transition: .3s;
     margin-left: 10px;
+    font-size: 14px;
 }
-.second-nav, .second-nav  .link{
+.second-nav, .second-nav  .link-nav{
     display: flex;
     align-items: center;
 }
-.second-nav  .link{
+.second-nav  .link-nav{
     margin-right: 20px;
 }
-.second-nav  .link img{
+.second-nav  .link-nav img{
     width: 25px;
 }
-.second-nav a:hover{
-   opacity: 0.5;
+.second-nav .link-nav:hover{
+   cursor: pointer; 
 }
+
+
+
+
+
 
 
 /* .slider{
@@ -197,17 +213,20 @@ input[name="r"]{
    border-radius: 50px;
    height: 100%;
 }
+.dots{
+    margin-top: 20px;
+}
 .dot {
   height: 10px;
   width: 30px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #eef1f2;
   border-radius: 10px;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 .active {
-  background-color: #717171;
+  background-color: #bbb;
 }
 .fade {
   animation-name: fade;
@@ -443,11 +462,21 @@ hr{
 .footer-inner{
     padding: 30px 0;
 }
-footer .logo, .links{
+footer .logo, .link{
     width: 15%;
 }
 footer .logo img{
     width: 70%;
+}
+.footer-flex input{
+    opacity: 0;
+}
+.link .fa::before{
+        content: "\f0d7";
+        display: none;
+}
+.mobile-logo{
+    display: none;
 }
 .icons{
     width: 70%;
@@ -462,6 +491,12 @@ footer .logo img{
 .links{
     display: flex;
     flex-direction: column;
+}
+label.toggleMenu{
+    display: none;
+}
+.link hr{
+    display: none;
 }
 .links h3{
     font-size: 1.1rem;
