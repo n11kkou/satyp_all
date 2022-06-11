@@ -1,10 +1,50 @@
 /* Large device */
 @media only screen and (max-width: 1200px){
+    .wrapper{
+        width: 85%;
+    }
+    #slider{
+        width: 85%;
+    }
+    .product-card{
+        width: 24%;
+    }
+    .inner-info img{
+        position: static;
+    }
+
+
 
 }
 
 /* Medium device/desktops */
 @media only screen and (max-width: 992px){
+    .wrapper{
+        width: 90%;
+    }
+    #slider{
+        width: 90%;
+    }
+    #products .flex{
+        flex-wrap: wrap;
+    }
+    .product-card{
+        width: 24%;
+    }
+    .inner-card{
+        padding: 15px;
+    }
+    .heart{
+        top: 10px;
+    }
+    .inner-info img{
+        width: 130px;
+        bottom: 10px;
+    }
+    .inner-desc{
+        width: 80%;
+    }
+    
 
 }
 
