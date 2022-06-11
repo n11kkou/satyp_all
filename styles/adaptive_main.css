@@ -340,6 +340,15 @@ a{
     width: 90%;
     margin: 25px auto 0;
 }
+.search-header-mobile input {
+    border-radius: 20px;
+    padding: 14px 0 14px 15px;
+    font-size: 12px;
+}
+.search-header button, .search-header-mobile button {
+    width: 36px;
+    height: 36px;
+}
 #slider{
     width: 90%;
     position: relative;
