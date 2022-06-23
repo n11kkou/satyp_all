@@ -12,7 +12,7 @@ Bold 700 */
 }
 html {
     scroll-behavior: smooth;
-  }
+}
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -131,11 +131,6 @@ header .search-header{
 .second-nav .link-nav:hover{
    cursor: pointer; 
 }
-
-
-
-
-
 
 
 /* .slider{
