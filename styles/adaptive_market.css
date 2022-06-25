@@ -27,9 +27,22 @@
 }
     .btn-container button{
         border-width: 1.6px;
-        width: 130px;
+        width: 120px;
         padding: 10px 0;
         border-radius: 20px;
         font-size: 12px;
+    }
+    
+    .btn-container button:hover{
+        border-width: 1.6px;
+        width: 120px;
+        padding: 10px 0;
+        border-radius: 20px;
+        font-size: 12px;
+        border-color: #0353a4;
+        color: #0353a4;
+        background-color: transparent;
+        top: 0px; 
+        box-shadow: none;
     }
 }
