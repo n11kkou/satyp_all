@@ -183,6 +183,7 @@ header .search-header{
     border-radius: 10px;
     border: none;
     font-size: 16px;
+    cursor: pointer;
 }
 .input a{
     color: rgba(0, 0, 0, 0.5);
