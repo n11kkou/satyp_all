@@ -6,6 +6,9 @@
     justify-content: space-between;
     align-items: center;
 }
+.about-flex img{
+    width: 50%;
+}
 .reverse{
     flex-direction: row-reverse;
 }
@@ -18,7 +21,7 @@
 
 #advant{
     text-align: center;
-    margin: 100px;
+    margin: 100px 0;
 }
 #advant img{
     width: 70%;
@@ -27,16 +30,18 @@
 #partners{
     margin: 120px 0 50px;
 }
-#partners .row{
-    margin-bottom: 20px;
-}
 .row .partner{
     width: 18%;
     padding: 10px;
     border-radius: 20px;
     overflow: hidden;
     border: 1px solid black;
+    margin-top: 20px;
 }
 .row .partner img{
     width: 100%;
+}
+
+.name {
+    margin-bottom: 10px;
 }
