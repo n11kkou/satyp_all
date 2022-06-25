@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Light 300
+Regular 400
+Medium 500
+Bold 700 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    overflow: scroll;
+}
+header{
+    padding-top: 10px;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+.header-mobile{
+    display: none;
+}
+.onscroll{
+    box-shadow: 0 0 15px rgba(187, 187, 187, 0.908);
+}
+body.scroll{
+    overflow: hidden;
+}
+.wrapper{
+    width: 75%;
+    margin: 0 auto;
+}
+.inner{
+    padding: 10px 0;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    width: 9%;
+    margin-right: 5%;
+    cursor: pointer;
+    transition: .3s;
+}
+header nav{
+    width: 30%;
+}
+header nav img{
+    width: 9%;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+header nav img:hover{
+    opacity: 0.5;
+}
+header .search-header{
+    width: 60%;
+}
+.search-header-mobile{
+    display: none;
+}
+.search-header {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.search-header input{
+    font-size: 16px;
+}
+.search-header input, .search-header-mobile input{
+    width: 100%;
+    border-radius: 40px;
+    border-color: #0353a4;
+    padding: 16px 0 16px 25px; 
+}
+.search-header button, .search-header-mobile button{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0353a4;
+    padding: 10px;
+    position: absolute;
+    right: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+.search-header button:hover, .search-header-mobile button:hover{
+    background: #034689;
+}
+.search-header button:hover img, .search-header-mobile button:hover img{
+    width: 80%;
+}
+.search-header button img, .search-header-mobile button img{
+    width: 85%;
+}
+.second-nav {
+    padding-top: 100px;
+}
+.second-nav .link-nav{
+    background: #f6f7f9;
+    border: 1px solid #eef1f2;
+    padding: 7px 14px;
+    border-radius: 16px;
+}
+.second-nav a{
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.second-nav, .second-nav  .link-nav{
+    display: flex;
+    align-items: center;
+}
+.second-nav  .link-nav{
+    margin-right: 20px;
+}
+.second-nav  .link-nav img{
+    width: 25px;
+}
+.second-nav .link-nav:hover{
+   cursor: pointer; 
+}
+
+
+
+#categories{
+    margin: 50px 0;
+}
+.name{
+    margin-bottom: 30px;
+    /* align-items: center; */
+}
+.name a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+.name a:hover{
+    text-decoration: underline;
+}
+.name, .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.row{
+    margin-bottom: 10px;
+}
+.row .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.row .card{
+    width: 22%;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 15px rgba(212, 211, 211, 0.908);
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+.row .card img{
+    width: 200px;
+}
+.row .card a{
+    text-decoration: none;
+    color: black;
+}
+.row .card:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+.hidden{
+    display: none;
+}
+.btn-container{
+    text-align: center;
+    margin-top: 30px;
+}
+.btn-container button{
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    border-color: #0353a4;
+    color: #0353a4;
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 15px;
+
+}
+.btn-container button:hover{
+    background-color: #0353a4;
+    color: white;
+    position: relative;
+    top: 3px; 
+    box-shadow: 0 5px 5px rgb(220, 220, 220);
+}
+
+
+
+#pre-footer{
+    margin: 120px 0;
+}
+.text{
+     width: 50%;
+     margin: 0 auto;
+     text-align: center;
+}
+.text p{
+     margin: 20px 0 30px;
+ }
+.search-footer{
+     width: 70%;
+     margin: 0 auto;
+     position: relative;
+     display: flex;
+     align-items: center;
+     height: 55px;
+}
+.search-footer input{
+     width: 100%;
+     border-radius: 40px;
+     border-color: #0353a4;
+     padding: 19px 0 19px 25px;    
+ }
+.search-footer button{
+     width: 200px;
+     height: 50px;
+     border-radius: 40px;
+     border: none;
+     background-color: #0353a4;
+     padding: 10px;
+     position: absolute;
+     right: 4px;
+     cursor: pointer;
+     transition: .3s;
+     color: white;
+     font-size: 15px;
+}
+.search-footer button:hover{
+     background: #034689;
+}
+.textp{
+     font-size: .8rem;
+}
+.textp span{
+     color: #0353a4;
+     text-decoration: underline;
+     cursor: pointer;
+}
+ 
+ 
+ 
+ 
+ hr{
+     height: 1px;
+     background-color: #0353a4;
+     border: none;
+ }
+ .footer-flex{
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+ }
+ .footer-inner{
+     padding: 30px 0;
+ }
+ footer .logo, .link{
+     width: 15%;
+ }
+ footer .logo img{
+     width: 70%;
+ }
+ .footer-flex input{
+     opacity: 0;
+ }
+ .link .fa::before{
+         content: "\f0d7";
+         display: none;
+ }
+ .mobile-logo{
+     display: none;
+ }
+ .icons{
+     width: 70%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 15px;
+ }
+ .icons a img{
+     width: 25px;
+ }
+ .links{
+     display: flex;
+     flex-direction: column;
+ }
+ label.toggleMenu{
+     display: none;
+ }
+ .link hr{
+     display: none;
+ }
+ .links h3{
+     font-size: 1.1rem;
+     margin-bottom: 10px;
+ }
+ .links a{
+     font-size: 14px;
+ }
+ .links a{
+     text-decoration: none;
+     color: rgba(0, 0, 0, 0.551);
+     margin-top: 10px;
+ }
+ .links a:hover{
+     color: black;
+ }

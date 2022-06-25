@@ -75,6 +75,9 @@ header .search-header{
     position: relative;
     align-items: center;
 }
+.search-header input{
+    font-size: 16px;
+}
 .search-header input, .search-header-mobile input{
     width: 100%;
     border-radius: 40px;
@@ -366,6 +369,7 @@ input[name="r"]{
     padding: 9px 30px;
     border-radius: 30px;
     border-color: #0353a4;
+    color: #0353a4;
     background-color: transparent;
     cursor: pointer;
     transition: .3s;
