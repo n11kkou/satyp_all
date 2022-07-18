@@ -208,6 +208,7 @@ header .search-header{
 }
 .form_icons img{
     width: 20%;
+    cursor: pointer;
 }
 .form p{
     text-align: center;

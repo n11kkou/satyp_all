@@ -76,14 +76,14 @@
     }
     .btn-container button{
         border-width: 1.6px;
-        width: 120px;
+        width: 150px;
         padding: 10px 0;
         border-radius: 20px;
         font-size: 12px;
     }
     .btn-container button:hover{
         border-width: 1.6px;
-        width: 120px;
+        width: 150px;
         padding: 10px 0;
         border-radius: 20px;
         font-size: 12px;

@@ -10,6 +10,7 @@
     width: 100%;
     color: white;
     padding: 15px 20px;
+    cursor: pointer;
 }
 .choose-outside .fa::before{
     content: "\f0d7";

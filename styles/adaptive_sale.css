@@ -8,7 +8,19 @@
 }
 /* Small device/tablets */
 @media only screen and (max-width: 768px){
-
+    .primenit:hover{
+        border-radius: 20px;
+        border-color: #0353a4;
+        color: #0353a4;
+        background-color: white;
+    }
+    .neprimenit:hover{
+        margin-right: 0;
+        border-radius: 20px;
+        background-color: #0353a4;
+        border-color: #0353a4;
+        color: white;
+    }
 }
 /* Extra small device/phone */
 @media only screen and (max-width: 480px){
@@ -16,7 +28,7 @@
         margin: 30px 0 10px;
     }
     .name {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     .choose-outside {
         padding: 10px;
@@ -37,6 +49,19 @@
         padding: 9px;
         width: 120px;
         margin-right: 0;
+    }
+    .primenit:hover{
+        border-radius: 20px;
+        border-color: #0353a4;
+        color: #0353a4;
+        background-color: white;
+    }
+    .neprimenit:hover{
+        margin-right: 0;
+        border-radius: 20px;
+        background-color: #0353a4;
+        border-color: #0353a4;
+        color: white;
     }
     .sale-card {
         height: 200px;
